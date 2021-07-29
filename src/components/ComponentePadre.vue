@@ -5,7 +5,9 @@
     <input id="input" type="text" placeholder="Ingresa una nueva tarea" v-model="nuevaLista">
     <button type="button" @click="AgregarTarea">Añadir</button>
     <h3>Lista</h3>
-    <ComponenteHijo v-for="(tarea, index) in agregar" :key="index" :nuevaTarea="tarea" @borrarTarea="EliminarTarea(index)" /> 
+    <ul>
+      <ComponenteHijo v-for="(tarea, index) in agregar" :key="index" :nuevaTarea="tarea" @borrarTarea="EliminarTarea(index)" /> 
+    </ul>
   </div>
 
 </template>
@@ -57,5 +59,11 @@ button {
   margin-left: 1px;
   cursor: pointer;
   padding: 5px;
+}
+ul {
+  width: 30%;
+  margin: 0 auto;
+  text-align: left;
+  padding-left: 16em;
 }
 </style>

@@ -1,9 +1,7 @@
 <template>
-    <ul>
-      <li>
-        {{nuevaTarea}} <button type="button" @click="BorrarTarea(index)">Eliminar</button>
-      </li>
-    </ul>
+  <li>
+    {{nuevaTarea}} <button type="button" @click="BorrarTarea(index)">Eliminar</button>
+  </li>
 </template>
 
 <script>
@@ -31,10 +29,5 @@ button {
   cursor: pointer;
   padding: 3.5px 5px;
 }
-ul {
-  width: 30%;
-  margin: 0 auto;
-  text-align: left;
-  padding-left: 16em;
-}
+
 </style>
